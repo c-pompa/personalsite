@@ -1,0 +1,182 @@
+/* H Tags */
+
+h1 {
+    padding-left: 150px;
+}
+
+h2 {
+    padding-top: 25px;
+    color: #c6e2e6;
+}
+
+h3 {
+    color: white;
+}
+
+h4 {
+    color: #ADADAD;
+}
+
+
+/* ========== */
+
+
+/* Body and Header */
+
+body header {
+    width: 100%;
+}
+
+body {
+    background-color: black;
+    font-size: 14px;
+    color: white;
+}
+
+header .navbar {
+    color: #ADADAD;
+    height: 100%;
+}
+
+.navbar a {
+    color: #ADADAD;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+header #header {
+    height: 275px;
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    color: white;
+}
+
+header .row {
+    height: 100%;
+    color: white;
+    background-color: #252525;
+}
+
+header .navbar {
+    height: 100%;
+}
+
+#firstbg {
+    background-color: #002032;
+}
+
+#secondbg {
+    background-color: black;
+}
+
+
+/* About me */
+
+.about {
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+.about-me-info {
+    /* background-color: pink; */
+    margin-left: 50px;
+    width: 100%;
+}
+
+
+/* div.container img {
+    max-width: 200px;
+    max-height: 200px;
+    padding-left: 30px;
+    padding-top: 40px;
+} */
+
+
+/* Experience */
+
+.experience {
+    background-color: yellow;
+    height: 200px;
+}
+
+
+/* Education */
+
+.education {
+    background-color: green;
+    height: 100%;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.education-info {
+    padding-left: 25px;
+}
+
+.list-group-item {
+    background-color: #002032;
+    border: 1px solid #c6e2e6;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.list-inline {
+    padding-left: 25px;
+}
+
+li img {
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+    max-width: 175px;
+    max-height: 175px;
+    z-index: 0;
+    opacity: 0.3;
+}
+
+#courses {
+    z-index: 2;
+    position: relative;
+}
+
+
+/* Projects */
+
+.projects {
+    background-color: blue;
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+.projects-info {
+    background-color: lightgreen;
+    padding-left: 25px;
+}
+
+.card {
+    /* If you assign a width, and have more than two columns, will break */
+    /* width: 50%; */
+}
+
+
+/* Contact */
+
+.contact {
+    background-color: purple;
+    height: 250px;
+    color: white;
+}
+
+
+/* Basic anchors */
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: grey;
+}
