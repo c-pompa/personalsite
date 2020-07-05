@@ -2,11 +2,13 @@
 
 h1 {
     padding-left: 150px;
+    font-family: 'Roboto', sans-serif;
 }
 
 h2 {
     padding-top: 25px;
     color: #c6e2e6;
+    font-family: 'Roboto', sans-serif;
 }
 
 h3 {
@@ -31,11 +33,13 @@ body {
     background-color: black;
     font-size: 14px;
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 header .navbar {
     color: #ADADAD;
     height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .navbar a {
@@ -47,7 +51,7 @@ header .navbar {
 }
 
 header #header {
-    height: 275px;
+    height: 475px;
     width: 100%;
     margin: auto;
     padding: 0px;
@@ -117,7 +121,7 @@ header .navbar {
 }
 
 .list-group-item {
-    background-color: #002032;
+    background-color: #000;
     border: 1px solid #c6e2e6;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -134,7 +138,7 @@ li img {
     max-width: 175px;
     max-height: 175px;
     z-index: 0;
-    opacity: 0.3;
+    opacity: .1;
 }
 
 #courses {
