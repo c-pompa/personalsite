@@ -1,3 +1,9 @@
+div.col-sm {
+    margin: 0px;
+    padding: 0px;
+}
+
+
 /* H Tags */
 
 h1 {
@@ -19,8 +25,25 @@ h4 {
     color: #ADADAD;
 }
 
+h5 {
+    color: #ADADAD;
+    padding-left: 150px;
+}
+
 
 /* ========== */
+
+
+/* Header bg image */
+
+.main-bg {
+    position: relative;
+    background: white;
+    background-image: url("../images/nasa.jpg");
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-size: cover;
+}
 
 
 /* Body and Header */
@@ -131,10 +154,14 @@ header .navbar {
     padding-left: 25px;
 }
 
+ul li {
+    font-size: 12px;
+}
+
 li img {
     position: absolute;
-    bottom: 20px;
-    right: 100px;
+    bottom: 15px;
+    right: 90px;
     max-width: 175px;
     max-height: 175px;
     z-index: 0;
