@@ -1,3 +1,47 @@
+/* Extra small devices (portrait phones, less than 576px)*/
+
+
+/* No media query for `xs` since this is the default in Bootstrap*/
+
+
+/* Small devices (landscape phones, 576px and up)*/
+
+@media (max-width: 576px) {}
+
+
+/* Medium devices (tablets, 768px and up)*/
+
+@media (max-width: 768px) {
+    .img-site-resize {
+        margin-top: 15px;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up)*/
+
+@media (max-width: 992px) {
+    /* Header bg image */
+    header.main-bg {
+        position: relative;
+        background: white;
+        background-image: url("../images/bg1.jpg");
+        background-attachment: fixed;
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .container {
+        max-width: 90%;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up)*/
+
+
+/* @media (min-width: 1200px) { ... } */
+
 div.col-sm {
     margin: 0px;
     padding: 0px;
@@ -7,12 +51,13 @@ div.col-sm {
 /* H Tags */
 
 h1 {
-    padding-left: 150px;
+    padding-left: 10%;
     font-family: 'Roboto', sans-serif;
+    -webkit-text-stroke: .8px #002032;
 }
 
 h2 {
-    padding-top: 25px;
+    /* padding-top: 25px; */
     color: #c6e2e6;
     font-family: 'Roboto', sans-serif;
 }
@@ -26,8 +71,11 @@ h4 {
 }
 
 h5 {
-    color: #ADADAD;
-    padding-left: 150px;
+    color: #002032;
+    padding-left: 10%;
+    text-decoration: underline;
+    text-decoration-color: #002032;
+    text-decoration-thickness: 4px;
 }
 
 
@@ -39,10 +87,12 @@ h5 {
 .main-bg {
     position: relative;
     background: white;
-    background-image: url("../images/nasa.jpg");
+    background-image: url("../images/bg1.jpg");
     background-attachment: fixed;
-    background-position: bottom center;
-    background-size: cover;
+    background-position: top center;
+    /* background-size: cover; */
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 
@@ -60,13 +110,14 @@ body {
 }
 
 header .navbar {
-    color: #ADADAD;
+    color: #002032;
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 .navbar a {
-    color: #ADADAD;
+    color: #002032;
+    font-weight: bold;
 }
 
 .navbar a:hover {
@@ -91,9 +142,34 @@ header .navbar {
     height: 100%;
 }
 
+
+/* Test Gradient */
+
 #firstbg {
-    background-color: #002032;
+    position: relative;
+    z-index: 1;
+    /* matters! */
+    background: #002032;
+    transition: background 0.7s;
 }
+
+#firstbg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( to bottom, transparent, #002032);
+    z-index: -1;
+}
+
+#firstbg:hover {
+    background: #0a4263;
+}
+
+
+/*  */
 
 #secondbg {
     background-color: black;
@@ -107,19 +183,29 @@ header .navbar {
     padding-bottom: 20px;
 }
 
-.about-me-info {
-    /* background-color: pink; */
-    margin-left: 50px;
-    width: 100%;
+
+/* hover over div, underline */
+
+div.container:hover h2 {
+    /* color: red; */
+    text-decoration: underline;
+    text-decoration-color: #38b0c9;
+    text-decoration-thickness: 4px;
 }
 
 
-/* div.container img {
-    max-width: 200px;
-    max-height: 200px;
-    padding-left: 30px;
-    padding-top: 40px;
-} */
+/* Container Changes */
+
+div.container {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.about-me-info {
+    /* background-color: pink; */
+    margin-left: 5%;
+    width: 100%;
+}
 
 
 /* Experience */
@@ -136,7 +222,6 @@ header .navbar {
     background-color: green;
     height: 100%;
     color: white;
-    padding-bottom: 20px;
 }
 
 .education-info {
