@@ -102,28 +102,33 @@ body header {
     width: 100%;
 }
 
+html {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     background-color: black;
     font-size: 14px;
     color: white;
     font-family: 'Roboto', sans-serif;
+    position: relative;
 }
 
+
+}
 header .navbar {
     color: #002032;
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
-
 .navbar a {
     color: #002032;
     font-weight: bold;
 }
-
 .navbar a:hover {
     color: white;
 }
-
 header #header {
     height: 475px;
     width: 100%;
@@ -131,28 +136,24 @@ header #header {
     padding: 0px;
     color: white;
 }
-
 header .row {
     height: 100%;
     color: white;
     background-color: #252525;
 }
-
 header .navbar {
     height: 100%;
 }
 
-
 /* Test Gradient */
-
 #firstbg {
     position: relative;
     z-index: 1;
     /* matters! */
+    
     background: #002032;
     transition: background 0.7s;
 }
-
 #firstbg::before {
     content: "";
     position: absolute;
@@ -163,86 +164,67 @@ header .navbar {
     background: linear-gradient( to bottom, transparent, #002032);
     z-index: -1;
 }
-
 #firstbg:hover {
     background: #0a4263;
 }
 
-
 /*  */
-
 #secondbg {
     background-color: black;
 }
 
-
 /* About me */
-
 .about {
     height: 100%;
     padding-bottom: 20px;
 }
 
-
 /* hover over div, underline */
-
 div.container:hover h2 {
-    /* color: red; */
     text-decoration: underline;
     text-decoration-color: #38b0c9;
     text-decoration-thickness: 4px;
 }
 
-
-/* Container Changes */
-
+/* ################# Container Changes #############*/
 div.container {
     padding-top: 35px;
     padding-bottom: 35px;
 }
-
+div.container-lg,
+.my-3 {
+    padding: 10px;
+    padding-left: 25px;
+}
 .about-me-info {
     /* background-color: pink; */
+    
     margin-left: 5%;
     width: 100%;
+    color: white;
 }
-
-
-/* Experience */
-
-.experience {
-    background-color: yellow;
-    height: 200px;
-}
-
 
 /* Education */
-
 .education {
     background-color: green;
     height: 100%;
     color: white;
 }
-
 .education-info {
     padding-left: 25px;
 }
-
-.list-group-item {
+li.list-group-item {
     background-color: #000;
     border: 1px solid #c6e2e6;
     padding-top: 25px;
     padding-bottom: 25px;
 }
-
 .list-inline {
     padding-left: 25px;
 }
-
 ul li {
     font-size: 12px;
 }
-
 li img {
     position: absolute;
     bottom: 15px;
@@ -252,47 +234,126 @@ li img {
     z-index: 0;
     opacity: .1;
 }
-
 #courses {
     z-index: 2;
     position: relative;
 }
 
+/* #################################################### */
 
 /* Projects */
 
+/* #################################################### */
+input.btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+.affix {
+    top: 55px;
+    margin-left: 5%;
+    z-index: 9999 !important;
+}
+.card>img {
+    width: 302px;
+}
+div>.container-project {
+    padding: 0px;
+    padding-top: 20px;
+    padding-right: 10px;
+    margin: 0px;
+}
+div.col-sm-9 {
+    font-size: 12px;
+    margin: 0px;
+}
+div.col-12 h2 {
+    color: #c6e2e6;
+}
+#section1 h3 {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px
+}
+div.container-project h2 {
+    color: #002032;
+    padding-left: 25px;
+    margin-top: 0px;
+}
+p.lead {
+    font-size: 12px;
+    padding-left: 10%;
+}
+p>i {}
+nav#myScrollspy.col-sm-2 {
+    margin: 0;
+    margin-right: 25px
+}
+div.container-project .list-group {
+    position: sticky;
+    /* Supported in latest version of Chrome, Firefox, Safari, Opera and Edge browsers */
+    
+    top: 15px;
+    background-color: white;
+}
+a.list-group-item {
+    border: 0;
+    border-bottom: 1px;
+    border-color: red;
+    background-color: white;
+}
 .projects {
     background-color: blue;
     height: 100%;
     padding-bottom: 20px;
 }
-
 .projects-info {
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
+    
     padding-left: 25px;
 }
-
 .card {
+    background-color: white;
     /* If you assign a width, and have more than two columns, will break */
-    /* width: 50%; */
+    
+    width: 90%;
+    padding-right: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.card-title {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.card-text {
+    font-size: 12px;
+    padding: 0px;
+    padding-left: 25px;
+    margin: 0;
+}
+div.card-body {
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 8px;
+    width: 100%;
 }
 
+/* #################################################### */
+
+/* #################################################### */
 
 /* Contact */
-
 .contact {
     background-color: purple;
     height: 250px;
     color: white;
 }
 
-
 /* Basic anchors */
-
 a {
     color: white;
 }
-
 a:hover {
     color: grey;
 }
